@@ -149,13 +149,13 @@ main{
   }
 
   #rating-container{
-    width: 78%;
+    width: 80%;
   }
 
   .rating-item{
     padding:1rem 1.5rem;
     flex-direction: row;
-    width: 85%;
+    width: 90%;
     justify-content: flex-start;
     gap:2rem;
     align-items: center;
