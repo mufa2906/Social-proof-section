@@ -155,7 +155,7 @@ main{
   .rating-item{
     padding:1rem 1.5rem;
     flex-direction: row;
-    width: 90%;
+    width: 405px;
     justify-content: flex-start;
     gap:2rem;
     align-items: center;
