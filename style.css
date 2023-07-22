@@ -173,13 +173,14 @@ main{
   #testimoni-container{
     grid-column: 1/3;
     flex-direction: row;
+    height: 100%;
   }
 
   .testimoni-item{
     padding: 2rem 2.5rem;
     /* flex-direction: row; */
     width: 32%;
-    height: 90%;
+    height: 80%;
     gap:0.5rem;
   }
 
