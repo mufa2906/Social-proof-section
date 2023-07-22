@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+  --magenta: hsl(300, 43%, 22%);
+  --pink: hsl(333, 80%, 67%);
+  --dark-magenta: hsl(303, 10%, 53%);
+  --light-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+
+*{
+  box-sizing: border-box;
+  /* border:0.5px solid red; */
+}
+
+body{
+  font-size:15px;
+  font-family: 'League Spartan', sans-serif;
+  display: flex;
+  min-width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+main{
+  margin: 4rem 1rem;
+}
+
+#header-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+#header-container, #rating-container{
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--magenta);
+}
+
+#header-h1{
+  font-size: 2.5rem;
+  margin-bottom:1rem;
+}
+
+#header-p{
+  line-height: 1.2;
+  margin: 0 1.4rem;
+  color: var(--dark-magenta);
+  font-weight:500 ;
+}
+
+#rating-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:1rem;
+  margin-bottom: 3rem;
+}
+
+.rating-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-magenta);
+}
+
+
+.rating-description{
+  margin:0;
+}
+
+#testimoni-container{
+  display:flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--light-magenta);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.testimoni-item{
+  border-radius: 0.5rem;
+  background-color: var(--magenta);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  line-height: 1.2;
+}
+
+.testimoni-profile{
+  display: flex;
+  gap:1.5rem;
+  align-items: center;
+}
+
+.profile-name{
+  margin:0;
+  font-size: 1rem;
+}
+
+.profile-tag{
+  display: block;
+  color: var(--pink);
+}
+
+.profile-image{
+  width:2.5rem;
+  height:2.5rem;
+  border-radius:50%
+}
+
+.testimoni-description{
+  font-size: 1.05rem;
+}
+
+@media (min-width: 1024px){
+  main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 4rem 8rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;  
+    
+  }
+
+  #header-container{
+    text-align: left;
+    justify-content: center;
+    margin-bottom:3rem;
+  }
+
+  #header-h1{
+    font-size: 3rem;
+    margin-right: 15rem;
+  }
+
+  #header-p{
+    margin:0;
+    margin-right: 13rem;
+  }
+
+  #rating-container{
+    /* margin: 0 4rem; */
+  }
+
+  .rating-item{
+    padding:1rem 1.5rem;
+    flex-direction: row;
+    width: 85%;
+    justify-content: flex-start;
+    gap:2rem;
+    align-items: center;
+  }
+
+  .rating-item:nth-child(2){
+    align-self: center;
+  }
+
+  .rating-item:nth-child(3){
+    align-self: flex-end;
+  }
+
+
+  #testimoni-container{
+    grid-column: 1/3;
+    flex-direction: row;
+  }
+
+  .testimoni-item{
+    padding: 2rem 2.5rem;
+    /* flex-direction: row; */
+    width: 32%;
+    height: 90%;
+    gap:0.5rem;
+  }
+
+  .testimoni-item:nth-child(2){
+    align-self: center;
+  }
+
+  .testimoni-item:nth-child(3){
+    align-self: flex-end;
+  }
+
+
+}
